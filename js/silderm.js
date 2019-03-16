@@ -1,0 +1,1 @@
+$(document).ready(function(){var e=$("#lightSliderr").lightSlider({auto:!0,pauseOnHover:!0,pause:4e3,loop:!0,item:1,pager:!1,controls:!1});$("#goToPrevSlider").click(function(){e.goToPrevSlide()}),$("#goToNextSlider").click(function(){e.goToNextSlide()})});

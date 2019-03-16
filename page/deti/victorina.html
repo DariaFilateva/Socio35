@@ -1,0 +1,203 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+  <meta charset="UTF-8"/> 
+  <base href="/"/> 
+  <title>Социо35</title> 
+  <meta name="viewport" content="width=device-width"/> 
+  <link rel="stylesheet" media="all" href="/css/main_global.css"/> 
+  <link rel="stylesheet" media="all" href="/css/pages/trash/shablon.css"> 
+</head> 
+<body> 
+  <header> 
+    <div class="header-content"> 
+      <p>#социополис<span>35</span></p> 
+    </div> 
+    <div class="menu-content"> 
+      <ul> 
+        <li> <a href="/">Главная</a></li> 
+        <li> <a href="/page/page2.html">О проекте</a></li> 
+        <li> <a href="/page/page2.html">Контакты</a></li> 
+        <li> <a href="/page/page2.html">Поиск</a></li> 
+      </ul> 
+      <div class="mobile-menu-content"> 
+        <div aria-hidden="true" class="menu-icon fa fa-bars fa-2x">
+        </div> 
+        <ul class="m_menu-content"> 
+          <li> <a href="/">Главная</a></li> 
+          <li> <a href="/page/page2.html">О проекте</a></li> 
+          <li> <a href="/page/page2.html">Контакты</a></li> 
+          <li> <a href="/page/page2.html">Поиск</a></li> 
+        </ul> 
+      c
+      <p class="logo">#социополис<span>35</span></p> 
+    </div> 
+  </header> 
+  <section style="background:url(../../img/deti/2.png); background-repeat: no-repeat; background-size: cover;" class="lat_services"> 
+    <div class="lat_services-wrap">
+      <a href="/page/deti/deti.html" class="lat_services-title"><span>викторина "знатоки мультфильмов"</span></a> 
+      <div class="lat_services-content"> 
+ 
+
+
+
+
+<style type="text/css">
+
+	.wrapper{
+		width: 900px;
+		height: 250px;
+		margin: 0 auto;
+		display: none;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+
+		padding-top: 10px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	var countQuest = 0;
+	var plus = 0;
+	var test_start = 0;
+	
+	function check(num){
+	
+		if(num == 4){ 
+			
+			document.getElementById('area').style.display='block'; 
+			//document.getElementById('start').style.display='none';
+			document.getElementById('end').style.display='inline';
+
+			if(test_start == 0){
+			
+					//Массив вопросов
+				var questions = ["Как зовут крокодила в мультфильме «Чебурашка»?","Кто построил «Летучий корабль»?","Кого измеряли герои мультфильма «38 попугаев» в попугаях?","Как звали кота в мультфильме «Трое из Простоквашино»?","Кто красит забор в мультфильме «Вовка в тридевятом царстве»?","Что означает имя Маугли в одноименном мультфильме?","Что умеет делать Золотая антилопа?","Как зовут хозяйку поросенка Фунтика?","Как зовут хозяина попугая Кеши?","Кто был другом котенка Гав?"];
+
+					//Массивы вариантов ответов
+				var number1 = ["Петя","Иванушка","Удава","Шарик","Вовка","Медвежонок","Выбивать драгоценные камни","Беладонна","Петька","Щенок"];	
+				var number2 = ["Гена","Полкан","Мартышку","Барсик","Трое из ларца","Волчонок","Выбивать золото","Белоснежка","Сашка","Кот"];	
+				var number3 = ["Вася","Забава","Слоненка","Матроскин","Царь","Лягушонок","Выбивать алмазы","Беломоре","Вовка","Пес"];	
+
+				document.getElementById('question').innerHTML=questions[countQuest];
+				
+				document.getElementById('option1').innerHTML=number1[countQuest];
+				document.getElementById('option2').innerHTML=number2[countQuest];
+				document.getElementById('option3').innerHTML=number3[countQuest];
+
+				
+					//Массив правильных ответов
+				var answer = [1,0,0,2,2,2,1,0,2,0];
+				
+				test_start = 1;	
+			}
+		}
+		else{
+					//Массив вопросов
+			var questions = ["Как зовут крокодила в мультфильме «Чебурашка»?","Кто построил Летучий корабль?","Кого измеряли герои мультфильма «38 попугаев» в попугаях?","Как звали кота в мультфильме «Трое из Простоквашино»?","Кто красит забор в мультфильме «Вовка в тридевятом царстве»?","Что означает имя Маугли в одноименном мультфильме?","Что умеет делать Золотая антилопа?","Как зовут хозяйку поросенка Фунтика?","Как зовут хозяина попугая Кеши?","Кто был другом котенка Гав?"];
+			
+				//Массивы вариантов ответов
+				var number1 = ["Петя","Иванушка","Удава","Щарик","Вовка","Медвежонок","Выбивать драгоценные камни","Беладонна","Петька","Щенок"];	
+				var number2 = ["Гена","Полкан","Мартышку","Барсик","Трое из ларца","Волчонок","Выбивать золото","Белоснежка","Сашка","Кот"];	
+				var number3 = ["Вася","Забава","Слоненка","Матроскин","Царь","Лягушонок","Выбивать алмазы","Беломоре","Вовка","Пес"];	
+
+			
+				//Массив правильных ответов
+			var answer = [1,0,0,2,2,2,1,0,2,0];
+			
+			if(num == answer[countQuest]) plus++;
+			
+			if(questions.length - 1> countQuest){
+
+				countQuest++;
+				
+				document.getElementById('question').innerHTML=questions[countQuest];
+			
+				document.getElementById('option1').innerHTML=number1[countQuest];
+				document.getElementById('option2').innerHTML=number2[countQuest];
+				document.getElementById('option3').innerHTML=number3[countQuest];
+
+
+			}
+			else{ 
+			
+				document.getElementById('area').style.display='none';
+				//alert('У Вас ' + plus + ' правильных ответа!');
+				var end='У Вас ' + plus + ' правильных ответа!';
+				$('.itg').text(end);
+			}
+		}
+	}
+	
+</script>
+
+	<div style="margin-top: 200px;">
+
+		<div id="area" class="wrapper">
+
+			<center>			
+			
+				<p style="font-size: 30px;font-weight: bold;font-family: GothamB;padding-top: 2px;color: #000000;" id="question"></p>
+
+				<button onclick="check(0)" class="lat_services-button" id="option1"></button>
+				
+				<button onclick="check(1)" class="lat_services-button" id="option2"></button>
+				
+				<button onclick="check(2)" class="lat_services-button" id="option3"></button>
+				
+			
+			</center>
+		</div>
+	
+	</div>	
+	
+	<br><center>
+		<p class="itg"></p>	
+		<!-- <button id="start" class="lat_services-button" onclick="check(4)">принять участие</button> -->
+		<script type="text/javascript"> 
+			var curent_url = document.URL; document.write("<a id='end' style='display: none;' class='lat_services-button' href='" + curent_url + "'>Начать сначала</a>"); 
+		</script>
+		
+	</center>
+	
+
+
+
+
+
+
+
+
+
+            </div> 
+          </div> 
+        </div> 
+      </section> 
+      <footer class="footer"> 
+        <div class="footer-content"> 
+          <div class="soc">
+            <a href="https://vk.com/sociopolis35" aria-hidden="true" class="fa fa-vk fa-2x vk"></a>
+            <a href="#" aria-hidden="true" class="fa fa-facebook fa-2x facebook"></a>
+            <a href="http://www.thepictaram.club/instagram/chsu_media" aria-hidden="true" class="fa fa-instagram fa-2x instagram"></a>
+            <a href="#" aria-hidden="true" class="fa fa-twitter fa-2x twitter"></a>
+          </div> 
+          <div class="footer-menu"> 
+            <ul> 
+              <li><a href="/">Главная</a></li> 
+              <li><a href="/page/page2.html">О проекте</a></li> 
+              <li><a href="/page/page2.html">Контакты</a></li> 
+            </ul> 
+          </div> 
+        </div> 
+      </footer> 
+      <script src="/js/all.js"></script> 
+      <script src="/js/main.js"></script>
+      <script type="text/javascript">
+			$(window).on('load',function(){check(4);});
+      </script> 
+    </body> 
+    </html> 
+
